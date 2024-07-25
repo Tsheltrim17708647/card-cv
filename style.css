@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #007bff;
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.card-title + p {
+    margin-top: -0.5rem;
+} 
+
+.card-body h3 {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.card-body ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.card-body ul li {
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.card-body ul li::before {
+    content: "\2022"; 
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 576px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Custom styles for header */
+.card .card-body header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card .card-body header img {
+    border-radius: 10px; 
+    margin-bottom: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1); 
+}
+
+.card .card-body header h1 {
+    font-size: 2.5rem;
+}
+
+.card .card-body header .card-subtitle {
+    font-size: 1.25rem;
+}
+}
